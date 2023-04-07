@@ -1,0 +1,50 @@
+{
+    "name": "去除ys900广告插件",
+    "version": "1.0",
+    "description": "https://www.ys900.com/去除广告插件",
+    "permissions": [
+      "offscreen", 
+      "tabs", 
+      "activeTab", 
+      "declarativeContent", 
+      "storage",
+      "contextMenus"
+    ],
+    "background": {
+      "service_worker": "service-worker.js",
+      "type": "module"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icons/ad.png",
+        "32": "icons/ad1.png",
+        "48": "icons/ad2.png",
+        "64": "icons/ad3.png",
+        "128": "icons/ad4.png"
+      },
+      "default_title": "ad clear",
+      "default_popup": "popup/popup.html"
+    },
+    "host_permissions": [
+      "https://www.ys900.com/"
+    ],
+    "optional_host_permissions": [
+      "*://*/*"
+    ],
+    "content_scripts": [
+      {
+          "matches": [
+            "https://www.ys900.com/v_play/**"
+          ],
+          "js": ["./scripts/ys900.js"]
+      }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["images/*.jpeg"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+      "manifest_version": 3
+}
+
