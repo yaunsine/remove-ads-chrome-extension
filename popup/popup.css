@@ -12,3 +12,13 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.github-btn img{     
+    margin-bottom: -3px;     
+    margin-right: 10px;     
+  }
+
+#username {
+    font-size: 16px;
+}
