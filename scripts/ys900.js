@@ -17,4 +17,10 @@ function start() {
 	  document.querySelector("body > div.playbox").style.cssText="height:100%";	  
 }
 
-start();
+
+chrome.runtime.onMessage.addListener(
+	function(request, sender, sendResponse) {
+	  // 收到请求
+	  console.log(request)
+  });
+  

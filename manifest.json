@@ -11,7 +11,7 @@
       "contextMenus"
     ],
     "background": {
-      "service_worker": "service-worker.js",
+      "service_worker": "background.js",
       "type": "module"
     },
     "action": {
@@ -28,13 +28,17 @@
     "host_permissions": [
       "https://www.ys900.com/"
     ],
+    "chrome_url_overrides":
+    {
+    "newtab": "./popup/popup.html"
+    },
     "optional_host_permissions": [
       "*://*/*"
     ],
     "content_scripts": [
       {
           "matches": [
-            "https://www.ys900.com/v_play/**"
+            "<all_urls>"
           ],
           "js": ["./scripts/ys900.js"]
       }
