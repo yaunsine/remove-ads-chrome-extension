@@ -1,0 +1,11 @@
+.rows {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchContent{
+    width: 80%;
+    height: 100px;
+}
+

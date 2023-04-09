@@ -10,19 +10,27 @@
       <script src="../lib/jquery-3.6.4.min.js"></script>
       <script src="popup.js"></script>
       <div class="rows"><img src="../icons/ad4.png" alt="main launch image" /></div>
-      <div class="rows"><input type="button" id="btn" value="跳转电影网站"/></div>
       <hr/>
       <div class="rows">
-        <input type="radio" name="voice" value="0.5"/>0.5倍速
-        <input type="radio" name="voice" value="1" checked/>1倍速<br/>
-        <input type="radio" name="voice" value="2"/>2倍速
-        <input type="radio" name="voice" value="4"/>4倍速
+        <input type="button" class="requestMovieUrlBtn" id="btn1" value="电影ys900"/>
+      </div><br/>
+      <div class="rows">
+        <input type="button" class="clearAdBtn" id="btn2" value="去除ys900广告"/>
+      </div><br/>
+      <div class="rows">
+        <input type="button" class="bingSearchBtn" id="btn3" value="必应搜索"/>
+      </div>
+      <hr/>
+      <div class="rows">
+        <input type="radio" class="voice" name="voice" value="0.5"/>0.5倍速
+        <input type="radio" class="voice" name="voice" value="1" checked/>1倍速<br/>
+        <input type="radio" class="voice" name="voice" value="2"/>2倍速
+        <input type="radio" class="voice" name="voice" value="4"/>4倍速
       </div><hr/>
       <div class="rows">
-        <a class="github-btn btn">     
-          <img src="images/github2.png"  height="15"/><b>Github:<label id="username">yaunsine</label></b>
-        </a> 
+        <button class="githubBtn" id="btn4">     
+          <img src="images/github-white.png"  height="15"/><b>Github:<label id="username">yaunsine</label></b>
+        </button> 
       </div>
-      
     </body>
   </html>

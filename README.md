@@ -6,6 +6,8 @@
 
 去ys900电影广告插件，使用chrome-extension manifest v3架构
 
+## 界面
+![](https://raw.github.com/yaunsine/remove-ads-chrome-extension/master/github-images/interface-v2.0.1.png)
 
 ## 架构目录
 ```javascript

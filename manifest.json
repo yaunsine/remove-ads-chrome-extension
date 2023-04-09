@@ -3,16 +3,14 @@
     "version": "1.0",
     "description": "https://www.ys900.com/去除广告插件",
     "permissions": [
-      "offscreen", 
-      "tabs", 
-      "activeTab", 
-      "declarativeContent", 
+      "activeTab",
+      "tabs",
       "storage",
+      "scripting",
       "contextMenus"
     ],
     "background": {
-      "service_worker": "background.js",
-      "type": "module"
+      "service_worker": "background.js"
     },
     "action": {
       "default_icon": {
@@ -26,21 +24,18 @@
       "default_popup": "popup/popup.html"
     },
     "host_permissions": [
-      "https://www.ys900.com/"
+      "<all_urls>"
     ],
     "chrome_url_overrides":
     {
-    "newtab": "./popup/popup.html"
+    "newtab": "./home/index.html"
     },
-    "optional_host_permissions": [
-      "*://*/*"
-    ],
     "content_scripts": [
       {
           "matches": [
             "<all_urls>"
           ],
-          "js": ["./scripts/ys900.js"]
+          "js": ["./scripts/content.js", "./scripts/intro.js"]
       }
     ],
     "web_accessible_resources": [

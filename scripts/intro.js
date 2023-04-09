@@ -18,9 +18,4 @@ function start() {
 }
 
 
-chrome.runtime.onMessage.addListener(
-	function(request, sender, sendResponse) {
-	  // 收到请求
-	  console.log(request)
-  });
-  
+// window.location.href="https://github.com/yaunsine/remove-ads-chrome-extension";
